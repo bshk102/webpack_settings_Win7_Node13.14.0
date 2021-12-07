@@ -1,0 +1,12 @@
+body {
+  padding: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+img {
+  max-width: 100%;
+}
