@@ -4,16 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --mode=development",
+    "dev": "cross-env NODE_ENV=development webpack --mode=development --devtool=source-map",
     "build": "cross-env NODE_ENV=production webpack --mode=production",
-    "watch": "cross-env NODE_ENV=development webpack --mode=development --watch",
-    "start": "cross-env NODE_ENV=development webpack serve --mode development"
+    "watch": "cross-env NODE_ENV=development webpack --mode=development --watch --devtool=source-map",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development --devtool=source-map"
   },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "last 10 versions"
     ],
     "development": [
       "last 1 chrome version",
@@ -39,6 +40,7 @@
     "node-sass": "^4.14.1",
     "postcss": "^8.4.4",
     "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.0.1",
     "sass": "^1.44.0",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",

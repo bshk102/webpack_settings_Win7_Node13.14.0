@@ -44,12 +44,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(scss|css)$/,
+        test: /\.(sc|c)ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader',
           'sass-loader',
+          'postcss-loader',
         ],
       },
       {
