@@ -6,7 +6,6 @@ const path = require('path'),
   autoprefixer = require('autoprefixer');
 
 const isDev = process.env.NODE_ENV === 'development';
-console.log(isDev);
 
 module.exports = {
   entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'app.js')],
